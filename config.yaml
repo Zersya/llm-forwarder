@@ -6,6 +6,8 @@ model_list:
       api_key: os.environ/LLM_API_KEY
       rpm: 1000
       tpm: 60000
+      input_cost_per_token: 0.0000006
+      output_cost_per_token: 0.0000035
 
 litellm_settings:
   drop_params: true
