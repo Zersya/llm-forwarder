@@ -4,7 +4,7 @@ services:
   litellm:
     image: docker.litellm.ai/berriai/litellm:main-latest
     ports:
-      - "4000:4000"
+      - "4040:4000"
     environment:
       - DATABASE_URL=postgresql://postgres:postgres@db:5432/litellm
       - LLM_API_KEY=${LLM_API_KEY}
@@ -14,6 +14,7 @@ services:
       - MASTER_KEY=${MASTER_KEY}
       - UI_USERNAME=${UI_USERNAME}
       - UI_PASSWORD=${UI_PASSWORD}
+      - STORE_MODEL_IN_DB=${STORE_MODEL_IN_DB}
       - CONFIG_FILE_PATH=/app/config.yaml
     volumes:
       - ./config.yaml:/app/config.yaml
