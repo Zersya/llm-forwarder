@@ -15,7 +15,6 @@ services:
       - UI_USERNAME=${UI_USERNAME}
       - UI_PASSWORD=${UI_PASSWORD}
       - STORE_MODEL_IN_DB=${STORE_MODEL_IN_DB}
-      - AUTO_REDIRECT_UI_LOGIN_TO_SSO=${AUTO_REDIRECT_UI_LOGIN_TO_SSO}
       - CONFIG_FILE_PATH=/app/config.yaml
     volumes:
       - ./config.yaml:/app/config.yaml
