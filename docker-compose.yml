@@ -12,6 +12,8 @@ services:
       - MODEL_NAME=${MODEL_NAME}
       - MODEL_ALIAS=${MODEL_ALIAS}
       - MASTER_KEY=${MASTER_KEY}
+      - UI_USERNAME=${UI_USERNAME}
+      - UI_PASSWORD=${UI_PASSWORD}
       - CONFIG_FILE_PATH=/app/config.yaml
     volumes:
       - ./config.yaml:/app/config.yaml
