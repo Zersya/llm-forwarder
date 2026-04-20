@@ -16,6 +16,8 @@ services:
       - UI_PASSWORD=${UI_PASSWORD}
       - STORE_MODEL_IN_DB=${STORE_MODEL_IN_DB}
       - CONTROL_PLANE_URL=${CONTROL_PLANE_URL}
+      - INPUT_PRICE_PER_M=${INPUT_PRICE_PER_M}
+      - OUTPUT_PRICE_PER_M=${OUTPUT_PRICE_PER_M}
       - CONFIG_FILE_PATH=/app/config.yaml
     volumes:
       - ./config.yaml:/app/config.yaml
